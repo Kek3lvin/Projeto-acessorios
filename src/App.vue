@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <TheWelcome />
   </main>
+  <Footer />
 </template>
 
 <style scoped>
@@ -32,7 +34,6 @@ header {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
-    background-color:aquamarine;
   }
 
   .logo {
