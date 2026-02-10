@@ -1,7 +1,7 @@
 <template>
   <main class="pagina">
     <h1>Contato</h1>
-
+    <p>Dúvidas? Nos envie uma mensagem por meio do formulário abaixo.Sua opinão importa!</p>
     <form class="formulario">
       <input type="text" placeholder="Seu nome" />
 
@@ -32,7 +32,10 @@
   flex-direction: column;
   gap: 15px;
 }
-
+.pagina p{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .formulario input,
 .formulario textarea {
   padding: 12px;
@@ -40,7 +43,9 @@
   border: none;
   font-size: 16px;
 }
-
+.formulario{
+  padding: 6px
+}
 .formulario textarea {
   height: 120px;
   resize: none;

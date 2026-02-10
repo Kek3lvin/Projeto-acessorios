@@ -17,7 +17,7 @@
     <div class="card">
       <img src="/brinco2.webp" alt="Brinco">
 
-      <h3>Brinco Prata</h3>
+      <h3>Brinco Luxuoso</h3>
       <p>R$ 34,90</p>
 
       <button>Adicionar</button>
@@ -71,6 +71,7 @@
   height: 240px;
   object-fit: cover;
   margin-bottom: 10px;
+  border: solid 2px rgb(151, 143, 143)
 }
 
 .card h3 {

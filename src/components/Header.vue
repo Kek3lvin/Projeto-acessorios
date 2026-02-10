@@ -2,7 +2,7 @@
   <header class="header">
     <img class="banner" src="/banner.png" alt="banner da loja">
     <nav class="nav">
-      <router-link to="/">Home</router-link>
+      <router-link to="/">Inicio</router-link>
       <router-link to="/produtos">Produtos</router-link>
       <router-link to="/carrinho">Carrinho</router-link>
       <router-link to="/sobre">Sobre</router-link>
@@ -23,7 +23,7 @@
   width: 100%;
 }
 .banner {
-  width: 1785px;      
+  width: 1770px;      
   height: 250px;     
   object-fit: cover;
 }
@@ -38,6 +38,7 @@
   font-size: 25px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 </style>

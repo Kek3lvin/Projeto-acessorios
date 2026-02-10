@@ -12,6 +12,7 @@
         <button @click="adicionar(produto)">
           Adicionar ao carrinho
         </button>
+        <p v-if="msg" class="msg">{{ msg }}</p>
       </div>
     </div>
   </div>
@@ -52,7 +53,6 @@ function adicionar(produto) {
   carrinho.push(produto)
   localStorage.setItem("carrinho", JSON.stringify(carrinho))
 
-  alert("Produto adicionado ao carrinho!")
 }
 </script>
 
@@ -86,9 +86,8 @@ h1{
 .card img {
   width: 45%;
   border-radius: 6px;
+  border: solid 2px rgb(151, 143, 143);
 }
-
-
 button {
   margin-top: 10px;
   padding: 8px;
@@ -104,5 +103,13 @@ button {
 button:hover {
   transform: scale(1.1);
 }
-
+.msg{
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
 </style>

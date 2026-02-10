@@ -24,8 +24,7 @@
 
 .footer p {
   margin: 0;
-  font-weight: bold;
-  margin-left: 45%;
+  margin-left: 43%;
 }
 
 .social {

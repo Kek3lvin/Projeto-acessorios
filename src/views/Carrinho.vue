@@ -1,7 +1,7 @@
 <template>
   <main class="carrinho">
     <h1>Seu carrinho</h1>
-
+    <p>Aqui você encontra todos os itens que escolheu para sua compra. Revise os produtos, remova o que desejar e acompanhe o valor total do carrinho.</p>
     <p v-if="itens.length === 0">
       Seu carrinho está vazio 
     </p>
@@ -11,7 +11,7 @@
         <span>{{ item.nome }}</span>
         <span>R$ {{ item.preco.toFixed(2) }}</span>
 
-        <button @click="remover(index)">Remover</button>
+        <button @click="remover(index)"><img src="/trash.png" alt="lixo"></button>
       </div>
 
       <h2>Total: R$ {{ total }}</h2>
@@ -43,15 +43,23 @@ const total = computed(() =>
   padding: 40px;
   color: white;
 }
-.carrinho h1{
-  text-align: center
+.carrinho p{
+  text-align: center;
+  padding-bottom: 9px;
+  font-size: 22px;
 }
-.carrinho button{
-  border-radius: 2rem;
-  background-color: black;
-  color: white
+h1{
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 60px;
 }
-.item {
+button > img{
+  width: 26px;
+}
+span{
+  font-size: 20px;
+}
+.item, h2 {
   display: flex;
   justify-content: space-between;
   background: white;
@@ -59,5 +67,7 @@ const total = computed(() =>
   padding: 12px;
   margin: 10px 0;
   border-radius: 10px;
+  width: 500px;
+  margin-left: 35%;
 }
 </style>
