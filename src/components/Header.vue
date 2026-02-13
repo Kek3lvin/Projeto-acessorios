@@ -23,7 +23,7 @@
   width: 100%;
 }
 .banner {
-  width: 1770px;      
+  width: 1999px;      
   height: 250px;     
   object-fit: cover;
 }

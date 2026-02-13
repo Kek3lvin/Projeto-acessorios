@@ -80,11 +80,12 @@
 }
 
 .card button {
-  background: black;
+  background: #a67c00;
   color: white;
   border: none;
   padding: 10px 25px;
   border-radius: 15px;
+  box-shadow: 0 40px 20px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: transform 0.3s;
 }

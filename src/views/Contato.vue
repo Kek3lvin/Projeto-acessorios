@@ -1,67 +1,86 @@
 <template>
-  <main class="pagina">
-    <h1>Contato</h1>
-    <p>Dúvidas? Nos envie uma mensagem por meio do formulário abaixo.Sua opinão importa!</p>
-    <form class="formulario">
-      <input type="text" placeholder="Seu nome" />
+<section class="contato">
+  <h1>Fale com a gente</h1>
+  <p class="contato-desc">
+    Tem alguma dúvida ou sugestão? Preencha o formulário abaixo 
+  </p>
 
-      <input type="email" placeholder="Seu email" />
-
-      <textarea placeholder="Sua mensagem"></textarea>
-  
-      <button>Enviar mensagem</button>
+  <div class="contato-card">
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar mensagem</button>
     </form>
-     <p>Email: contato@goldenstyle.com</p> 
-     <p>Instagram: @goldenstyle</p> 
-     <p>WhatsApp: (84) 99999-9999</p>
+  </div>
 
-  </main>
+  <div class="contato-info">
+    <p>contato@goldenstyle.com</p>
+    <p> @goldenstyle</p>
+    <p> (84) 99999-9999</p>
+  </div>
+</section>
 </template>
-
 <style scoped>
-.pagina {
-  padding: 60px;
-  color: white;
+.contato {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.formulario {
-  max-width: 400px;
-  margin: 0 auto;
+.contato h1 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contato-desc {
+  color: #eee;
+  margin-bottom: 30px;
+}
+
+.contato-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.contato-card form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.pagina p{
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-.formulario input,
-.formulario textarea {
+
+.contato-card input,
+.contato-card textarea {
   padding: 12px;
   border-radius: 8px;
-  border: none;
-  font-size: 16px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
-.formulario{
-  padding: 6px
-}
-.formulario textarea {
-  height: 120px;
+
+.contato-card textarea {
   resize: none;
+  height: 120px;
 }
 
-.formulario button {
-  padding: 12px;
-  background: #1a1a1a;
-  color: white;
+.contato-card button {
+  background: #a67c00;
+  color: #fff;
   border: none;
-  border-radius: 20px;
+  padding: 14px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.2s;
+  font-size: 1rem;
 }
 
-.formulario button:hover {
-  transform: scale(1.05);
+.contato-card button:hover {
+  background: #8f6a00;
+}
+
+.contato-info {
+  margin-top: 30px;
+  color: #eee;
 }
 </style>

@@ -1,7 +1,6 @@
  <template>
   <div class="produtos-page">
     <h1>Nossos Acessórios</h1>
-     <p>Na nossa loja, os produtos são como </p>
     <div class="grid">
       <div class="card" v-for="produto in produtos" :key="produto.id">
         <img :src="produto.img" alt="produto" />
@@ -72,10 +71,9 @@ h1{
 }
 
 .card {
-  border: 1px solid #ddd;
-  box-shadow: 0 40px 200px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 40px 20px rgba(0, 0, 0, 0.15);
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 12px;
   background-color: white;
   color: black;
   transition: transform 0.3s;
@@ -92,8 +90,8 @@ button {
   margin-top: 10px;
   padding: 8px;
   cursor: pointer;
-  border-radius: 2rem; 
-  background-color: black;
+  border-radius: 3rem; 
+  background-color: #a67c00;
   color: white
 }
 button {
@@ -102,14 +100,5 @@ button {
 
 button:hover {
   transform: scale(1.1);
-}
-.msg{
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  position: fixed;
-  top: 20px;
-  right: 20px;
 }
 </style>

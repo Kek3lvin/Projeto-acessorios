@@ -1,30 +1,70 @@
 <template>
-  <main class="pagina">
-    <h1>SOBRE O PROJETO</h1>
-    <p>A Golden Style é uma loja virtual de acessórios criada como parte de um projeto educacional desenvolvido por alunos do curso de Informática para Internet. O objetivo principal deste site é aplicar, de forma prática, os conhecimentos adquiridos ao longo do semestre nas áreas de desenvolvimento web, design de interfaces e programação com o framework Vue.js.</p>
+<section class="sobre">
+  <h1>Sobre o projeto</h1>
 
-<p>O projeto foi pensado para simular o funcionamento de uma loja online real, permitindo ao usuário navegar entre diferentes páginas, visualizar produtos, adicioná-los ao carrinho de compras e acompanhar o valor total dos itens selecionados. Para isso, foi utilizado o recurso de localStorage, que possibilita salvar os dados do carrinho diretamente no navegador, mesmo após o recarregamento da página.</p>
+  <div class="sobre-cards">
+    <div class="sobre-card">
+      <h2> O projeto</h2>
+      <p>
+        A Golden Style foi desenvolvida por estudantes do curso de Informática
+        para Internet como parte de um projeto acadêmico.
+      </p>
+    </div>
 
-<p>Além do funcionamento técnico, também nos preocupamos com a aparência visual do site, buscando criar um layout simples, organizado e agradável para o usuário. As cores, imagens e organização dos elementos foram escolhidas com o intuito de transmitir modernidade e facilitar a navegação.</p>
+    <div class="sobre-card">
+      <h2> Objetivo</h2>
+      <p>
+        Aplicar na prática conceitos de desenvolvimento web, design de interfaces
+        e navegação entre páginas.
+      </p>
+    </div>
 
-<p>A Golden Style representa não apenas um site de vendas fictício, mas também uma experiência de aprendizado, onde foi possível compreender na prática como funcionam componentes, rotas de navegação, estilização com CSS e a interação entre diferentes partes de uma aplicação web.</p>
+    <div class="sobre-card">
+      <h2>Tecnologias</h2>
+      <p>
+        O site foi desenvolvido utilizando HTML, CSS, JavaScript, Vue.js
+        e o recurso de localStorage.
+      </p>
+    </div>
 
-<p>Este projeto contribuiu significativamente para o desenvolvimento das habilidades em programação, resolução de problemas e trabalho em equipe, sendo um importante passo na formação como desenvolvedores web.</p>
-  </main>
+    <div class="sobre-card">
+      <h2> Aprendizado</h2>
+      <p>
+        O projeto simula uma loja online real, permitindo compreender o funcionamento
+        de carrinho de compras, rotas e organização de componentes.
+      </p>
+    </div>
+  </div>
+</section>
 </template>
 
 <style scoped>
-.pagina {
-  padding: 50px;
-  color: white;
+.sobre {
+  padding: 7px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.sobre h1 {
   text-align: center;
-  font-size: 20px
+  margin-bottom: 40px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 35px;
 }
-.pagina h1{
-  font-family: The 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
+
+.sobre-card {
+  background: #ffffff;
+  color: #333;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
-.pagina p{
-  padding-bottom: 30px;
+
+.sobre-card h2 {
+  margin-bottom: 10px;
+  color: #a67c00; 
 }
 </style>
+
